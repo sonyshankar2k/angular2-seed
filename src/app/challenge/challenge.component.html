@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <h2>Coding Challenge</h2>
+
+  <div class="row mx-0">
+    <ag-grid-angular style="width: 500px; height: 250px;" class="ag-fresh"
+                    [rowData]="rowData"
+                    [columnDefs]="columnDefs"
+                    [gridOptions]="gridOptions"
+                    enableColResize
+                    enableSorting
+                    enableFilter
+                    groupHeaders
+                    suppressRowClickSelection
+                    toolPanelSuppressGroups
+                    toolPanelSuppressValues
+                    rowHeight="22"
+                    rowSelection="multiple">
+    </ag-grid-angular>
+  </div>
+</div>
