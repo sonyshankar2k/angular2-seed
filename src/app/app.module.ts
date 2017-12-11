@@ -16,6 +16,7 @@ import { RepoDetailComponent } from './github/repo-detail/repo-detail.component'
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { ChallengeComponent } from './challenge/challenge.component';
+import { ChallengeGroupComponent } from './challengeGroup/challengeGroup.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ChallengeComponent } from './challenge/challenge.component';
     RepoDetailComponent,
     HomeComponent,
     ContactComponent,
-    ChallengeComponent
+    ChallengeComponent,
+    ChallengeGroupComponent
   ],
   imports: [
     AgGridModule.withComponents([]),

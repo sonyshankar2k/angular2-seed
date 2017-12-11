@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <h2>Coding Challenge GroupBy</h2>
+  <div class="row" >
+      <div class="col">
+        Name
+      </div>
+      <div class="col" *ngFor="let category of globalCategory" >
+          {{category}}
+      </div>
+  </div>
+  <div class="row" *ngFor="let categoryGroupBy of challengeGroup">
+      <div class="col">
+          {{ categoryGroupBy.name }}
+      </div>
+    <div class="col" *ngFor="let data of categoryGroupBy.data" >
+      {{data.value}}
+    </div>
+  </div>
+</div>

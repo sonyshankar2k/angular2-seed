@@ -1,0 +1,7 @@
+.row div:nth-child(even){
+    background-color: #dcdcdc;
+}
+
+.row div:nth-child(odd){
+    background-color: #aaaaaa;
+}
