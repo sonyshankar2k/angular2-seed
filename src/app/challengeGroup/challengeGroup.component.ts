@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AgGridModule } from 'ag-grid-angular/main';
 import { GridOptions } from 'ag-grid/main'
@@ -21,9 +21,9 @@ export class ChallengeGroupComponent implements OnInit {
 
   constructor( private challengeService: ChallengeService ) {};
 
-  ngOnInit() {}
+  public ngOnInit() {}
 
-  ngAfterViewInit() {
+  public ngAfterViewInit() {
     this.getData();
   }
 
